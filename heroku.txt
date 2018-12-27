@@ -5,3 +5,11 @@
 5 type in env
 6. specify a script in package.json
 7. "start": "node ...js"
+8.  npm start to start the app
+9. since you have modified sth from the doc that uploaded to github
+10. use git add . (to update all the files)
+11. make a new commit
+12. push the file to github using "git push"
+13. deploy your app -> heroku create
+14. git push heroku
+15. heroku open to open you apps
