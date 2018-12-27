@@ -1,0 +1,23 @@
+1. Set up SSH keys to protect two computers
+
+ls - al ~/.ssh <- check for any key exist in your directory
+
+1. generate SSH keys
+    ssh-keygen -t rsa -b 4096 -C 'email'
+
+id_rsa : keeps your private key
+id_rsa.pub: give to github / heroku
+
+2. start up ssh agent program
+ eval "$(ssh-agent -s)"
+
+3. let the machine know your identity
+    ssh-add ~/.ssh/id_rsa
+
+4. go to github -> setting -> SSH key
+
+5. Test connection 
+    ssh -T git@github.com
+
+6. push code to github 
+    git push -u origin master

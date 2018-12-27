@@ -1,0 +1,7 @@
+1. dl heroku toolbelt
+2. add key to heroku
+3. check connection ssh -v git@heroku.com
+4. change port to server.js
+5 type in env
+6. specify a script in package.json
+7. "start": "node ...js"

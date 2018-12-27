@@ -4,6 +4,9 @@ const fs = require('fs');
 //make a new express app
 var app = express();
 
+//get the port for HEROKU
+const port = process.env.PORT || 3000;
+
 //add partials template
 hbs.registerPartials(__dirname + '/views/partials');
 //middleware lets you configure how the express applcaition work (3rd party add-on)
@@ -66,6 +69,6 @@ app.get('/bad', (req,res)=>{
     })
 });
 //bind the application to the port local nachine
-app.listen(3000, ()=>{
-    console.log('Server is up on port 3000');
+app.listen(port, ()=>{
+    console.log(`Server is up on port ${port}`);
 });

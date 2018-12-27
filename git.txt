@@ -1,0 +1,10 @@
+Git is for version control
+
+responsible for keeping track of the changes to your project but by default it doesnt track any of your files
+
+git repo
+ 
+no need to add node_modules
+
+first commit
+- git commit -m(msg) 'Initial Commit'
